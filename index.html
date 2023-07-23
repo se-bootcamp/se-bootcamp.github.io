@@ -308,6 +308,95 @@ E.  &lt;html&gt;,&lt;body&gt;,&lt;head&gt;,&lt;!DOCTYPE html&gt;
 
 
 
+ <h4>17. Select SQL constraints? </h4>
+
+<div>
+  <p>A.  NULL</p>
+  <p>B.  PRIMARY KEY</p>
+   <p>C. VIEWS</p>
+  <p>D.  TRIGGERS</p>
+ </div>
+
+
+ <h4>18. Which option is DML ?</h4>
+
+<div>
+  
+  <p>INSERT INTO </p>
+  <p>SELECT * FROM</p>
+   <p>ALTER TABLE</p>
+  <p>DROP TABLE</p>
+ </div>
+
+ <h4>19. How to select columns (with different data tpye) form three tables? </h4>
+
+ <div>
+   
+   <p>A.  use join</p>
+   <p>B.  use subquery </p>
+    <p>C. use union </p>
+   <p>D.  use group by</p>
+  </div>
+ 
+  <h4>20. Which SQL query is written properly </h4>
+
+  <div> A.
+    
+    <p>SELECT <br>
+  
+      company_name <br>
+    FROM distribution_companies dc <br>
+    JOIN movies m <br>
+    ON dc.id = m.distribution_company_id;</p>
+    <p>B.
+    
+      <p>SELECT <br>
+    
+        company_name <br>
+      FROM distribution_companies dc <br>
+      union<br>
+      SELECT <br>
+    
+        movie_name <br>
+        movie_title <br>
+      FROM movies mo
+      <br>
+</p>
+     <p> C.<br>
+      SELECT<br>
+      language,<br>
+      AVG(budget) AS movie_budget<br>
+    FROM movies<br>
+    GROUP BY budget<br>
+    HAVING AVG(budget) > 50;</p>
+    <p>
+      
+    </p>
+
+
+    <p> D.
+
+    SELECT <br>
+    employee_id, first_name, last_name<br>
+FROM<br>
+    employees<br>
+WHERE<br>
+    department_id IN (SELECT <br>
+            department_id<br>
+        FROM<br>
+            departments join employees<br>
+        WHERE<br>
+            location_id = 1700)<br>
+ORDER BY first_name , last_name;<br>
+
+</p>
+   </div>
+  
+
+
+
+
+
 
 
 
