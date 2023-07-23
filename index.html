@@ -341,13 +341,21 @@ E.  &lt;html&gt;,&lt;body&gt;,&lt;head&gt;,&lt;!DOCTYPE html&gt;
   <h4>20. Which SQL query is written properly </h4>
 
   <div> A.
+    SELECT <br>
+    employee_id, first_name, last_name<br>
+FROM<br>
+    employees<br>
+WHERE<br>
+    department_id IN (SELECT <br>
+            department_id<br>
+        FROM<br>
+            departments join employees<br>
+        WHERE<br>
+            location_id = 1700)<br>
+ORDER BY first_name , last_name;<br>
+
+</p>
     
-    <p>SELECT <br>
-  
-      company_name <br>
-    FROM distribution_companies dc <br>
-    JOIN movies m <br>
-    ON dc.id = m.distribution_company_id;</p>
     <p>B.
     
       <p>SELECT <br>
@@ -376,22 +384,19 @@ E.  &lt;html&gt;,&lt;body&gt;,&lt;head&gt;,&lt;!DOCTYPE html&gt;
 
     <p> D.
 
-    SELECT <br>
-    employee_id, first_name, last_name<br>
-FROM<br>
-    employees<br>
-WHERE<br>
-    department_id IN (SELECT <br>
-            department_id<br>
-        FROM<br>
-            departments join employees<br>
-        WHERE<br>
-            location_id = 1700)<br>
-ORDER BY first_name , last_name;<br>
+   
 
-</p>
+<p>SELECT <br>
+  
+  company_name <br>
+FROM distribution_companies dc <br>
+JOIN movies m <br>
+ON dc.id = m.distribution_company_id;</p>
    </div>
   
+
+
+
 
 
 
