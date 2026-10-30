@@ -1,0 +1,60 @@
+body{background-color: aquamarine;}
+
+.frame{
+    border:2px solid orange;
+    height:300px;
+    overflow: hidden;
+    text-align: center;
+    width:80%;
+    margin: auto;
+
+  
+}
+.slidewrapper{
+    width:400%;
+    height:100%;
+    animation: slideshow 4s infinite;
+
+  
+}
+
+
+@keyframes slideshow {
+    
+    0%{  margin-left:0%;}
+    25%{  margin-left:-100%;}
+    50%{  margin-left:-200%;}
+    75%{  margin-left:-300%;}
+    100%{  margin-left:-300%;}
+    
+}
+
+
+.frame>div>div{
+    
+    width: 25%;
+    float: left;
+    height:100%;
+  
+}
+
+
+
+.s1{background-color: rgb(132, 189, 39);
+    background-image: url('bird1.jpeg');
+    background-size: 100% 100%;
+}
+
+.s2{background-color: rgb(32, 48, 127);
+   background-image: url('bird2.jpeg');
+    background-size: 100% 100%;}
+
+.s3{background-color: rgb(244, 48, 212);
+    background-image: url('bird3.jpeg');
+    background-size: 100% 100%;
+}
+
+.s4{background-color: rgb(189, 111, 39);}
+
+
+
